@@ -203,6 +203,10 @@ body {
 
 @-webkit-keyframes icon-arrow {
   0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
     -webkit-transform: translateX(15px);
             transform: translateX(15px);
   }
@@ -216,6 +220,10 @@ body {
 
 @keyframes icon-arrow {
   0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
     -webkit-transform: translateX(15px);
             transform: translateX(15px);
   }

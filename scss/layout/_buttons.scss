@@ -93,6 +93,9 @@
 
 @keyframes icon-arrow {
     0% {
+    transform: translateX(0px);
+    }
+    50% {
     transform: translateX(15px);
     }
     100% {
