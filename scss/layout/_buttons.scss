@@ -85,7 +85,7 @@
         
         .button-arrow__icon {
             fill: currentColor;
-            transform: rotate(180deg);
+            transform: scale(-1);
             animation: icon-arrow .5s linear;
         }
     }
@@ -95,12 +95,9 @@
     0% {
     transform: translateX(15px);
     }
-    50% {
-    transform: rotate(90deg);
-    }
     100% {
     transform: translateX(0);
-    transform: rotate(180deg);
+    transform: scale(-1);
     }
 }
 
