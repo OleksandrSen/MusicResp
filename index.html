@@ -19,7 +19,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="about">
 		<nav class="navigation">
 			<input type="checkbox" id="menu" class="navigation__input">
 			<label for="menu" class="navigation__menu">
@@ -27,16 +27,16 @@
 			</label>
 			<ul class="menu">
 				<li class="menu__item">
-					<a href="#" class="menu__link">About</a>
+					<a href="#about" class="menu__link">About</a>
 				</li>
 				<li class="menu__item">
-					<a href="#" class="menu__link">Discography</a>
+					<a href="#disco" class="menu__link">Discography</a>
 				</li>
 				<li class="menu__item">
 					<a href="#" class="menu__link">Concert tours</a>
 				</li>
 				<li class="menu__item">
-					<a href="#" class="menu__link">Latter compositions</a>
+					<a href="#compositions" class="menu__link">Latter compositions</a>
 				</li>
 				<li class="menu__item">
 					<a href="#" class="menu__link">New tracks</a>
@@ -138,7 +138,7 @@
 		</div>
 	</section>
 
-	<section class="compositions">
+	<section class="compositions" id="compositions">
 		<div class="container">
 			<div class="title">
 				<h1 class="title__caption">
@@ -217,12 +217,7 @@
 			</div>
 
 			<div class="row no-gutters audio">
-				<div class="col-12 col-md-6 audio__video">
-					<iframe src="https://www.youtube.com/embed/ZTEHNRGqcxA" frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
-				<div class="col-12 col-md-6 audio__info audio__info--left">
+				<div class="col-12 col-md-6 audio__info audio__info--right">
 					<div class="audio__block">
 						<div class="date">
 							<time datetime="03-04-2015" class="date__time">20-07-2015</time>
@@ -279,6 +274,11 @@
 							</ul>
 						</div>
 					</div>
+				</div>
+				<div class="col-12 col-md-6 audio__video">
+					<iframe src="https://www.youtube.com/embed/ZTEHNRGqcxA" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
 				</div>
 			</div>
 

@@ -8,6 +8,14 @@
 
     &__info {
         position: relative;
+
+        &--right {
+            order: 1;
+
+            @media (max-width: $mobile) {
+                order: 0;
+            }
+        }
     }
 
     &__block {
@@ -37,6 +45,7 @@
         iframe {
             @include size(100%);
             min-height: 300px;
+            order: 0;
         }
     }
 }
