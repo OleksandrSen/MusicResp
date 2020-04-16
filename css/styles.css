@@ -686,10 +686,41 @@ body {
   position: relative;
 }
 
+.audio__info::after {
+  top: 50%;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.audio__info--left::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid #f6f6f6;
+  margin-right: -12px;
+  right: 0;
+}
+
 .audio__info--right {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.audio__info--right::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #f6f6f6;
+  margin-left: -12px;
+  left: 0;
 }
 
 @media (max-width: 767px) {
@@ -697,6 +728,24 @@ body {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .audio__info::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #f6f6f6;
+    margin-top: -5px;
+    top: auto;
+    bottom: -24px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
