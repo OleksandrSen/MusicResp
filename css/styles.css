@@ -311,6 +311,10 @@ body {
   color: #916352;
 }
 
+.title__caption-text--green {
+  color: #62a2ad;
+}
+
 .title__text {
   color: #798285;
   line-height: 24px;
@@ -785,6 +789,52 @@ body {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
+}
+
+.tours {
+  background: url("../images/toursmob.jpg") no-repeat bottom center;
+  background-size: contain;
+  padding-bottom: 250px;
+  padding-top: 1px;
+}
+
+@media (min-width: 1024px) {
+  .tours {
+    background-image: url("../images/toursdesc.jpg");
+    background-size: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .tours {
+    padding-bottom: 250px;
+  }
+}
+
+.tours__block {
+  margin-top: 300px;
+}
+
+.tracks {
+  height: 100vh;
+}
+
+.tracks__first, .tracks__second, .tracks__third {
+  width: 380px;
+  height: 420px;
+  background-size: contain;
+}
+
+.tracks__first {
+  background: url(../../images/01.jpg) no-repeat;
+}
+
+.tracks__second {
+  background: url(../../images/02.jpg) no-repeat;
+}
+
+.tracks__third {
+  background: url(../../images/03.jpg) no-repeat;
 }
 
 .contact h1 {

@@ -4,11 +4,6 @@
     align-items: center;
 }
 
-@mixin op50($color: false) {
-    opacity: 0.5;
-    @if $color {background: $color;}
-}
-
 @mixin bg($bg-mobile, $bg-desktop) {
     background: url('../images/#{$bg-mobile}') no-repeat bottom center;
     background-size: contain;

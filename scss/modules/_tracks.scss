@@ -1,0 +1,23 @@
+.tracks {
+  height: 100vh;
+
+  &__first,
+  &__second,
+  &__third {
+    width: 380px;
+    height: 420px;
+    background-size: contain;
+  }
+
+  &__first {
+    background: url(../../images/01.jpg) no-repeat;
+  }
+
+  &__second {
+    background: url(../../images/02.jpg) no-repeat;
+  }
+
+  &__third {
+    background: url(../../images/03.jpg) no-repeat;
+  }
+}

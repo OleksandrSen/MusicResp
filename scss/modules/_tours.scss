@@ -1,0 +1,13 @@
+.tours {
+  @include bg('toursmob.jpg', 'toursdesc.jpg');
+  padding-bottom: 250px;
+  padding-top: 1px;
+
+  @media (max-width: $mobile-portrait) {
+    padding-bottom: 250px;
+  }
+
+  &__block {
+    margin-top: 300px;
+  }
+}
